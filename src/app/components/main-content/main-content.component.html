@@ -1,0 +1,90 @@
+<header>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" [muted]="'muted'" loop="loop">
+      <source src="./../assets/network2.mp4" type="video/mp4">
+    </video>
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="display-3">Software Developer</h1>
+          <div class='console-container'>
+            <span id='text'></span>
+            <div class='console-underscore' id='console'>&#95;</div>
+          </div>
+        </div>
+      </div>
+    </div>
+ </header>
+<div class="wrapper">
+    <div class="container">
+        <div class="row">
+          <div class="mt-5 col-xs-12 col-sm-6">
+              <div class="card">
+                  <button class="btn" routerLink="/about"><span>About!</span></button>
+                </div>
+          </div>
+          <div class="mt-5 col-xs-12 col-sm-6">
+              <div class="card">
+                  <button class="btn"><a href="..//..//..//assets/RavenAndersonResumeV2.2019.docx" download>Download Resume</a></button>
+              </div>
+          </div>
+          <div class="general row col-xs-12 col-md-12 mt-5">
+              <h3>Project Overview</h3>
+              <p>Below are some projects I've worked on. Click the card for more info.</p>
+          </div>
+        </div>
+        <div class="timeline">
+            <div class="timeline-block timeline-block-right">
+               <div class="marker"></div>
+                 <div class="timeline-content clickable-right" routerLink="/projects" fragment="homeBase">
+                  <h3>Home Base</h3>
+                  <span>Pluralstack Inc.</span>
+                  <p>A Control panel where an admin can manage user data between databases. Tech Included: Angular, Typescript, Rxjs. Click for more info. </p>
+               </div>      
+            </div>
+            <div class="timeline-block timeline-block-left">
+                <div class="marker"></div>
+                <div class="timeline-content clickable-left" routerLink="/projects" fragment="windows">
+                   <h3>Windows95</h3>
+                   <span>Side Project</span>
+                   <p>Fun website to attempt to recreate the desktop.</p>
+                </div>
+             </div>
+         
+            <div class="timeline-block timeline-block-right">
+               <div class="marker"></div>
+               <div class="timeline-content">
+                  <h3>Connectors</h3>
+                  <span>Microsoft Project</span>
+                  <p>Backend project where I created a script to deploy connector apps. Tech included SQL, C Sharp. </p>
+               </div>
+            </div>
+         
+            <div class="timeline-block timeline-block-left">
+               <div class="marker"></div>
+               <div class="timeline-content">
+                  <h3>Automation Project</h3>
+                  <span>Carena Inc. Angular Project</span>
+                  <p>The purpose of this project was to make the process of creating websites more efficient. We kept repeating the same steps, so we created a process where a user can fill out one json form and creat a custom website templates. 
+                    Tech included: Angular, Grunt </p>
+               </div>
+              </div>
+            <div class="timeline-block timeline-block-right">
+                <div class="marker"></div>
+                <div class="timeline-content clickable-right" routerLink="/projects" fragment="doodle">
+                   <h3>Doodle Space</h3>
+                   <span>Side Project</span>
+                   <p>Exploring the world of web sockets.</p>
+                </div>
+             </div>
+             <div class="timeline-block timeline-block-left">
+                <div class="marker"></div>
+                <div class="timeline-content clickable-left" routerLink="/projects" fragment="bus">
+                   <h3>BusNapp</h3>
+                   <span>Side Project</span>
+                   <p>iOS app that wakes you up before your bus stop.</p>
+                </div>
+             </div>
+         </div>
+    </div>
+</div>

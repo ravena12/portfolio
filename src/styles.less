@@ -1,0 +1,31 @@
+.wrapper {
+    background-color: black;
+    height: 100vh;
+    overflow: auto;
+}
+
+.wrapper {
+	margin: 0;
+	width: 100%;
+	height: 100vh !important;
+	font-family: "Exo", sans-serif;
+    color: #fff;
+    background: linear-gradient(-45deg, #07181f, #900c8c, #1c32ad, #673AB7, #5a5959);
+	background-size: 400% 400%;
+	animation: gradientBG 30s ease infinite;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+

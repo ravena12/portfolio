@@ -1,0 +1,157 @@
+html,body{
+    margin:0;
+    }
+
+    p {
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+    
+    header {
+        position: relative;
+        background-color: black;
+        height: 20vh;
+        width: 100%;
+        overflow: hidden;
+      }
+      
+      header video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+      }
+      
+      header .container {
+        position: relative;
+        z-index: 2;
+      }
+      
+      header .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.65;
+        z-index: 1;
+      }
+
+      .img {
+        overflow: auto;
+        max-width: 100%; // or width instead of max-width
+        max-height: 500px;
+      }
+
+      @media(min-width: 1024px) {
+          .img {
+              max-width: 53%;
+          }
+          video {
+            width: 90%  !important;
+            height: auto !important;
+            margin-left: auto;
+          }
+      }
+
+      .responsive {
+        width: 50%;
+        height: auto;
+      }
+
+      video {
+        width: 90%  !important;
+        height: auto !important;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .row {
+          margin-left: auto;
+          margin-right: auto;
+      }
+
+      #homeBase {
+          padding: 20px;
+          background-color: #000000ad;
+          box-shadow: 0 0 5px #d2cc95;
+
+
+          .row {
+              margin-right: unset;
+          }
+
+          .responsive {
+              width: 100%;
+          }
+      }
+
+      #windows {
+          background-color: #000000ad;
+          box-shadow: 0 0 5px #d2cc95;
+
+          padding: 20px;
+
+          .row {
+              margin-right: unset;
+          }
+      }
+
+      #doodle {
+        background-color: #000000ad;
+        box-shadow: 0 0 5px #d2cc95;
+
+        padding: 20px;
+
+        .row {
+            margin-right: unset;
+        }
+    }
+
+    #bus {
+        background-color: #000000ad;
+        box-shadow: 0 0 5px #d2cc95;
+
+        padding: 20px;
+
+        .row {
+            margin-right: unset;
+        }
+    }
+    
+  
+      @media (pointer: coarse) and (hover: none) {
+        header {
+          background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+        }
+        header video {
+          display: none;
+        }
+      }
+
+      .wrapper {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 40px;
+      }
+
+      .vp-center {
+          justify-content: flex-end !important;
+      }
+     
+      
+    
